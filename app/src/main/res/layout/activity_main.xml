@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    
+    <!--spinner to change the difficulty of the board-->
+    <Spinner
+        android:id="@+id/theSpinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#8888"
+        android:tooltipText="Select one of the following:" />
+    
+    <!--for the button to be lined up horizontally-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        
+        <!--reset-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint='@color/purple_500'
+            android:onClick="reset"
+            android:text="Reset"
+            android:textSize="20dp" />
+        
+        <!--the flag-->
+        <ImageView
+            android:id="@+id/changeflag"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:onClick="flag"
+            android:src="@drawable/blank"
+            android:text="Flag" />
+        
+        <!--the hint-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/purple_500"
+            android:onClick="Instruction"
+            android:text="Instruction"
+            android:textSize="10dp" />
+    
+    
+    </LinearLayout>
+    
+    <!--the board-->
+    
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:columnCount="8"
+        android:rowCount="8">
+    
+    </GridLayout>
+
+</LinearLayout>
