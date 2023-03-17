@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
         GridLayout g = (GridLayout) findViewById(R.id.grid);
         int m = 0;
         for (int i = 0; i < row; i++) {
@@ -314,7 +315,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //when hint is click goes toi the hint screen
-    public void Instruction (View view) {
+    public void Instruction(View view) {
 //        Intent intent = new Intent(MineSweeper.this, mainminesweeperinstruction.class);
 //        startActivity(intent);
     }
