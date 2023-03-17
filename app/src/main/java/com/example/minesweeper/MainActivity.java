@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView flagpic = (ImageView) findViewById(R.id.changeflag);
         if (flag) {
             flag = false;
-            flagpic.setImageResource(R.drawable.blank);
+            flagpic.setImageResource(R.drawable.lime);
         } else {
             flag = true;
             flagpic.setImageResource(R.drawable.flagsel);
