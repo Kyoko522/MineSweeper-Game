@@ -270,7 +270,7 @@ public class MainActivity extends AppCompatActivity {
                         aflag[i][j] = 1;
 
                     } else if (show[i][j] == 1 && flags[i][j] == 0 && flag == true && aflag[i][j] == 1) {
-                        pics[m].setImageResource(R.drawable.lime);
+                        pics[m].setImageResource(R.drawable.blank);
                         show[i][j] = 0;
                         aflag[i][j] = 0;
 
