@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/material_dynamic_secondary10"
     android:orientation="vertical">
     
     <TextView
@@ -35,7 +35,8 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:backgroundTint='@color/purple_500'
+            android:backgroundTint='#70FF6A'
+            android:textColor="@color/black"
             android:onClick="reset"
             android:text="Reset"
             android:textSize="20dp" />
@@ -45,18 +46,21 @@
             android:id="@+id/changeflag"
             android:layout_width="50dp"
             android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:paddingBottom="3dp"
             android:layout_marginLeft="2dp"
             android:layout_marginTop="2dp"
             android:layout_marginRight="2dp"
             android:onClick="flag"
-            android:src="@drawable/blank"
+            android:src="@drawable/lime"
             android:text="Flag" />
         
         <!--the hint-->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:backgroundTint="@color/purple_500"
+            android:backgroundTint='#70FF6A'
+            android:textColor="@color/black"
             android:onClick="Instruction"
             android:text="Instruction"
             android:textSize="10dp" />
